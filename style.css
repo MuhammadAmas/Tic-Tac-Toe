@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     height: 100vh;
     text-align: center;
@@ -11,38 +11,40 @@ body{
     color: #06283D;
 }
 
-.player-names{
+.player-names {
     display: flex;
-    /* margin-bottom: 1em; */
     gap: 4em;
     font-size: 1.2rem;
-    
+
 }
-.player-names .player{
+
+.player-names .player {
     display: flex;
     flex-direction: column;
 }
 
-input{
+input {
     background-color: #EAF6F6;
     border: 1px solid #06283D !important;
     height: 24px;
     border-radius: 4px;
 }
 
-.start-button{
+.start-button {
     padding: 10px;
     border-radius: 8px;
     background-color: transparent;
     margin-bottom: 1em;
 }
-.buttons{
+
+.buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
     width: 450px;
 }
-.buttons #grid-button{
+
+.buttons #grid-button {
     font-size: 4rem;
     width: 150px;
     height: 150px;
@@ -50,15 +52,22 @@ input{
     border: none;
 }
 
-.button1, .button2, .button3, .button4, .button5, .button6{
+.button1,
+.button2,
+.button3,
+.button4,
+.button5,
+.button6 {
     border-bottom: 2px solid #06283D !important;
 
 }
 
-.button1, .button2, .button4, .button5, .button7, .button8{
+.button1,
+.button2,
+.button4,
+.button5,
+.button7,
+.button8 {
     border-right: 2px solid #06283D !important;
 
 }
-
-
-
