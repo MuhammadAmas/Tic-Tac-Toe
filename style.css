@@ -11,10 +11,6 @@ body {
     color: #06283D;
 }
 
-h1{
-    /* margin: 0; */
-}
-
 .player-names {
     display: flex;
     gap: 4em;
