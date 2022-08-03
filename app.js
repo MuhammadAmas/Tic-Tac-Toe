@@ -32,6 +32,13 @@ function boxClear() {
     }
 }
 
+function gameTied(){
+    for (let i = 0; i < 9; i++) {
+        
+        document.querySelector(`.button${i + 1}`).innerHTML = '';
+    }
+}
+
 let mark = 'O';
 let val = 2;
 function marker() {
@@ -47,7 +54,8 @@ function marker() {
 }
 
 function clicked(boxNumber) {
-    marker();
+    // marker();
+    console.log(marker().mark)
     document.querySelector(`.button${boxNumber + 1}`).innerHTML = `${marker().mark}`;
 
     if (marker().mark == 'X') {
@@ -61,12 +69,13 @@ function clicked(boxNumber) {
         console.log('Player1! You Won');
         disableButtons();
         alert('Player1! You Won');
-        replay();
     } else if ((player2[0] && player2[1] && player2[2]) || (player2[3] && player2[4] && player2[5]) || (player2[6] && player2[7] && player2[8]) || (player2[0] && player2[3] && player2[6]) || (player2[1] && player2[4] && player2[7]) || (player2[2] && player2[5] && player2[8]) || (player2[0] && player2[4] && player2[8]) || (player2[2] && player2[4] && player2[6]) == 1) {
         console.log('Player2! You Won');
         disableButtons();
         alert('Player2! You Won');
     }
+
+    
 
     console.log('player1', player1);
     console.log('player2', player2);
