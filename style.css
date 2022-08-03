@@ -91,7 +91,7 @@ h1{
 
 @media(max-width: 768px) {
     h1{
-        font-size: 1.7rem;
+        font-size: 3rem;
     }
     .buttons {
         width: 300px;
