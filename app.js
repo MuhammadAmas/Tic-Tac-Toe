@@ -73,10 +73,10 @@ function clicked(boxNumber) {
 
     if ((player1[0] && player1[1] && player1[2]) || (player1[3] && player1[4] && player1[5]) || (player1[6] && player1[7] && player1[8]) || (player1[0] && player1[3] && player1[6]) || (player1[1] && player1[4] && player1[7]) || (player1[2] && player1[5] && player1[8]) || (player1[0] && player1[4] && player1[8]) || (player1[2] && player1[4] && player1[6]) == 1) {
         disableButtons();
-        document.querySelector('.player-names').innerHTML = 'Player1! You Won';
+        document.querySelector('.player-names').innerHTML = '<h3>Player1! You Won</h3>';
     } else if ((player2[0] && player2[1] && player2[2]) || (player2[3] && player2[4] && player2[5]) || (player2[6] && player2[7] && player2[8]) || (player2[0] && player2[3] && player2[6]) || (player2[1] && player2[4] && player2[7]) || (player2[2] && player2[5] && player2[8]) || (player2[0] && player2[4] && player2[8]) || (player2[2] && player2[4] && player2[6]) == 1) {
         disableButtons();
-        document.querySelector('.player-names').innerHTML = 'Player2! You Won';
+        document.querySelector('.player-names').innerHTML = '<h3>Player2! You Won</h3>';
 
     }
 
