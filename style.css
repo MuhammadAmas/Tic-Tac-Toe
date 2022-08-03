@@ -27,12 +27,12 @@ h1{
     flex-direction: column;
 }
 
-input {
+/* input {
     background-color: #EAF6F6;
     border: 1px solid #06283D !important;
     height: 24px;
     border-radius: 4px;
-}
+} */
 
 .start-button {
     padding: 10px;
@@ -86,4 +86,16 @@ input {
 .button8 {
     border-right: 2px solid #06283D !important;
 
+}
+
+
+@media(max-width: 768px) {
+    .buttons {
+        width: 300px;
+    }
+
+    .buttons #grid-button {
+        width: 100px;
+        height: 100px;
+    }
 }
