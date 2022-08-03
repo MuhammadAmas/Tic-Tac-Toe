@@ -39,17 +39,17 @@ function boxClear() {
 }
 
 function gameTied() {
-    let count = 0;
-    for (let i = 0; i < 9; i++) {
-        if (document.querySelector(`.button${i}`).innerHTML = 'X' || document.querySelector(`.button${i}`).innerHTML == 'O') {
-            count += 1;
-            console.log(count);
-        }
-        if (count == 9) {
-            document.querySelector('.player-names').innerHTML = 'Game Tied';
-        }
-        console.log(count);
+    count += 1;
+    // for (let i = 0; i < 9; i++) {
+    //     if (document.querySelector(`.button${i}`).innerHTML = 'X' || document.querySelector(`.button${i}`).innerHTML == 'O') {
+    //         count += 1;
+    //         console.log(count);
+    //     }
+    // }
+    if (count == 9) {
+        document.querySelector('.player-names').innerHTML = '<h3>Game Tied</h3>';
     }
+    console.log(count);
 }
 
 let mark = 'O';
@@ -65,7 +65,7 @@ function marker() {
         mark
     };
 }
-
+let count = 0;
 function clicked(boxNumber) {
     marker();
     document.querySelector(`.button${boxNumber + 1}`).innerHTML = `${marker().mark}`;
@@ -84,6 +84,7 @@ function clicked(boxNumber) {
         disableButtons();
         document.querySelector('.player-names').innerHTML = '<h3>Player2!  You Won</h3>';
     }
+    gameTied();
 }
 
 
