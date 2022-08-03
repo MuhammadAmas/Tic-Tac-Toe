@@ -35,13 +35,15 @@ input {
     border-radius: 8px;
     background-color: transparent;
     margin-bottom: 1em;
+    background-color : #06283D;
+    color: #EAF6F6;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
-    width: 450px;
+    width: 400px;
 }
 
 .buttons #grid-button {
