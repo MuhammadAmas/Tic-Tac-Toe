@@ -39,10 +39,8 @@ function boxClear() {
 }
 
 function gameTied() {
-    for (let i = 0; i < 9; i++) {
-
-        document.querySelector(`.button${i + 1}`).innerHTML = '';
-    }
+    document.querySelector('.player-names').innerHTML = '<h3>Game has Tied</h3>';
+    replay();
 }
 
 let mark = 'O';
@@ -60,8 +58,7 @@ function marker() {
 }
 
 function clicked(boxNumber) {
-    // marker();
-    console.log(marker().mark)
+    marker();
     document.querySelector(`.button${boxNumber + 1}`).innerHTML = `${marker().mark}`;
 
     if (marker().mark == 'X') {
@@ -73,17 +70,20 @@ function clicked(boxNumber) {
 
     if ((player1[0] && player1[1] && player1[2]) || (player1[3] && player1[4] && player1[5]) || (player1[6] && player1[7] && player1[8]) || (player1[0] && player1[3] && player1[6]) || (player1[1] && player1[4] && player1[7]) || (player1[2] && player1[5] && player1[8]) || (player1[0] && player1[4] && player1[8]) || (player1[2] && player1[4] && player1[6]) == 1) {
         disableButtons();
-        document.querySelector('.player-names').innerHTML = '<h3>Player1! You Won</h3>';
+        document.querySelector('.player-names').innerHTML = '<h3>Player1!  You Won</h3>';
     } else if ((player2[0] && player2[1] && player2[2]) || (player2[3] && player2[4] && player2[5]) || (player2[6] && player2[7] && player2[8]) || (player2[0] && player2[3] && player2[6]) || (player2[1] && player2[4] && player2[7]) || (player2[2] && player2[5] && player2[8]) || (player2[0] && player2[4] && player2[8]) || (player2[2] && player2[4] && player2[6]) == 1) {
         disableButtons();
-        document.querySelector('.player-names').innerHTML = '<h3>Player2! You Won</h3>';
-
+        document.querySelector('.player-names').innerHTML = '<h3>Player2!  You Won</h3>';
+    }
+    if((player1[0] && player1[1] && player1[2]) || (player1[3] && player1[4] && player1[5]) || (player1[6] && player1[7] && player1[8]) || (player1[0] && player1[3] && player1[6]) || (player1[1] && player1[4] && player1[7]) || (player1[2] && player1[5] && player1[8]) || (player1[0] && player1[4] && player1[8]) || (player1[2] && player1[4] && player1[6])|| (player2[0] && player2[1] && player2[2]) || (player2[3] && player2[4] && player2[5]) || (player2[6] && player2[7] && player2[8]) || (player2[0] && player2[3] && player2[6]) || (player2[1] && player2[4] && player2[7]) || (player2[2] && player2[5] && player2[8]) || (player2[0] && player2[4] && player2[8]) || (player2[2] && player2[4] && player2[6]) != 1){
+        // disableButtons();
+        // gameTied();
     }
 
 
 
-    console.log('player1', player1);
-    console.log('player2', player2);
+    // console.log('player1', player1);
+    // console.log('player2', player2);
 }
 
 
