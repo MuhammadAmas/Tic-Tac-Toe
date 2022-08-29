@@ -15,7 +15,6 @@ body {
     display: flex;
     gap: 4em;
     font-size: 1.2rem;
-
 }
 
 .player-names .player {
@@ -23,34 +22,22 @@ body {
     flex-direction: column;
 }
 
-/* input {
-    background-color: #EAF6F6;
-    border: 1px solid #06283D !important;
-    height: 24px;
-    border-radius: 4px;
-} */
-
-.start-button {
-    padding: 10px;
+.start-button,
+.replay-button {
+    padding: 15px 10px;
     border-radius: 8px;
     margin-bottom: 1em;
-    background-color : #06283D;
+    background-color: #06283D;
     color: #EAF6F6;
-}
-
-.replay-button{
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 1em;
-    background-color : #06283D;
-    color: #EAF6F6;
+    font-size: 1rem;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
-    width: 400px;
+    width: 450px;
+    place-items: center;
 }
 
 .buttons #grid-button {
@@ -60,35 +47,16 @@ body {
     background-color: transparent;
     border-radius: 24px;
 }
+
 .grid-button:disabled {
     color: #06283D;
 }
 
-/* .button1,
-.button2,
-.button3,
-.button4,
-.button5,
-.button6 {
-    border-bottom: 2px solid #06283D !important;
-
-} */
-
-/* .button1,
-.button2,
-.button4,
-.button5,
-.button7,
-.button8 {
-    border-right: 2px solid #06283D !important;
-
-} */
-
-
 @media(max-width: 768px) {
-    h1{
+    h1 {
         font-size: 3rem;
     }
+
     .buttons {
         width: 300px;
     }
