@@ -58,13 +58,13 @@ body {
     width: 150px;
     height: 150px;
     background-color: transparent;
-    border: none;
+    border-radius: 24px;
 }
 .grid-button:disabled {
     color: #06283D;
 }
 
-.button1,
+/* .button1,
 .button2,
 .button3,
 .button4,
@@ -72,9 +72,9 @@ body {
 .button6 {
     border-bottom: 2px solid #06283D !important;
 
-}
+} */
 
-.button1,
+/* .button1,
 .button2,
 .button4,
 .button5,
@@ -82,7 +82,7 @@ body {
 .button8 {
     border-right: 2px solid #06283D !important;
 
-}
+} */
 
 
 @media(max-width: 768px) {
